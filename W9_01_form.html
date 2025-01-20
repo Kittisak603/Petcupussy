@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>++
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    fieldset{
+        background-color: rgb(0, 247, 255);
+    }
+</style>
+<body>
+    <h1>Html Form</h1>
+    <h2>Input Elemnt</h2>
+    <p>An <span style="color: brown;">input element </span>input element can be displayed in mays,depending on the <span style="color: aqua;">type</span>  attribute</p>    
+    <form action="method">
+        <fieldset>
+            <legend>Text Field</legend>
+            <label for="fname">First Name</label>
+            <input type="text" placeholder="กรุณาใส่ชื่อ" required id="fname" name="fname">
+            <br><br>
+            <label for="lname">Last name</label>
+            <input type="text" placeholder="กรุณาใส่นาม" required id="lname" name="lname">
+            <br><br>
+            <label for="mail">email</label>
+            <input type="email" placeholder="กรุณาใส่เมล" required id="mail" name="e">
+            <br><br>
+            <label for="a">Age </label>
+            <input type="number" placeholder="กรุณาใส่อายุ" id="e" required name="age" min="0" max="10" >
+            <label> <form action="">Age Readonly</form></label>
+            <input type="number" name="" id="" value="0643362247" required>
+            <br><br>
+            <label for="bd">Birthday</label>
+            <input type="date" placeholder="กรุณาใส่วันเกิด" id="bd" name="hbd" required>
+            <br><br>
+            <label for="url">Website</label>
+            <input type="url" required>                    
+            <input type="submit" value="ต่อไป">
+            <input type="reset" value="ยกเลิก">
+            
+        </fieldset>
+        <fieldset>
+            <legend>login</legend>
+            <form action="">
+            <input type="email" placeholder="Email" name="" id=""><br><br>
+            <input type="password" placeholder="Password" name="" id=""><br><br>
+            <input type="submit" value="Sign in">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Radio Button</legend>
+            <form action="">
+                <label for="gender">Gender</label>
+                <input type="radio" value="M" name="gender" id="male">
+                <label for="male">ผู้ชาย</label>
+                <input type="radio" value="F" name="gender" id="Female">
+                <label for="Female">ผู้หญิง</label><br><br>
+                <button type="submit">OK</button>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>check box</legend>
+            <form action="">
+                <p>เลือกภาษาที่ชอบ</p>
+                <input type="checkbox" value="HTML" id="html" name="laguage1">
+                <label for="html">Html</label>
+                <input type="checkbox" value="CSS" id="css" name="laguage2">
+                <label for="css">CSS</label>
+                <input type="checkbox" value="JavaScript" id="Js" name="laguage3">
+                <label for="Js">JavaScript</label>
+                <button type="button">Ok</button>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Select...Option [Dropdoen list]</legend>
+            <form action="">
+                <label for="province">Province</label>
+                <select name="province" id="province">
+                <option value="bangkok">กทม.</option>
+                <option value="Nakhon Pathom">นครปฐม</option>
+                <option value="Songkla">สงขลา</option>
+                </select>
+                <input type="submit" >
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Text Area</legend>
+            <form action="">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="50" rows="5"></textarea>
+                <input type="submit" name="" id="">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Upload File</legend>
+            <form action="">
+                <label for="">ไฟล์แนบ</label>
+                <input type="file" name="attach" >
+                <br><br>
+                <label for="">เลือกสี</label><input type="color" >
+            </form>
+        </fieldset>
+    </form>
+</body>
+</html>
