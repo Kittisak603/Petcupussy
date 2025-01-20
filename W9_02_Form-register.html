@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: rgb(158, 255, 255);
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .container{
+        max-width: 600px;
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgb(83, 218, 255);
+        margin: 0 auto;
+    }
+    h1{
+        text-align: center;
+        color: rgb(0, 255, 76);
+    }
+    input,select,textarea{
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid rgb(161, 174, 255);
+    }
+    button{
+        width: 100%;
+        background-color: rgb(168, 165, 255);
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: blue;
+    }
+
+</style>
+<body>
+    <div class="container">
+    <h1>Personal Information</h1>
+    <form action="" mathod="">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name" name="name" id="name">
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your email" name="email" id="eamil">
+
+        <label for="bd">Date of Birth</label>
+        <input type="date" name="Birth" id="bd">
+
+        <label for="gander">Gender</label>
+        <select name="gander" id="gander">
+            <option value="">--Select Gender--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="hobbies">Hobbies</label>
+        <textarea name="hobbies" id="hobbies" cols="50" rows="5"></textarea>
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="">--Country--</option>
+            <option value="Usa">USA</option>
+            <option value="janpan">janpan</option>
+            <option value="other">Other</option>
+            <option value="theiland">Theilamd</option>
+            <option value="other">Other</option>
+        </select>
+        <button type="submit">Submit</button>
+
+
+
+
+    </form>
+    </div>
+</body>
+</html>
