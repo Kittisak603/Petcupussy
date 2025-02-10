@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:Roboto, 'Pattaya&family', Helvetica, sans-serif;
+            background: rgb(98,128,75);
+            background: linear-gradient(90deg, rgba(98,128,75,1) 27%, rgba(127,133,122,1) 78%, rgba(196,196,196,1) 100%);  
+            /*/ทำให้อยู่ตรงกลาง/*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container{
+            background-color: rgb(255, 255, 255);
+            width: 700px;
+            border-radius: 20px;
+            /*/แยกซ้ายขวา/*/
+            display: flex;
+            overflow: hidden;
+        }
+        .left-side{
+            /*/คุมฝั่งซ้าย/*/
+            background-image: url(https://i1.wp.com/ngthai.com/app/uploads/2021/10/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94-1.jpg?resize=640%2C398&ssl=1);
+            background-size: cover;
+            background-blend-mode: darken ;
+            background-color: rgba(186, 186, 186, 0.5);
+            color: aliceblue;
+            text-align: center;
+            margin: 0;
+            padding: 24px;
+            width: 60%;
+            display: flex;
+            text-transform: uppercase;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .right-side{
+            padding: 40px;
+            width: 40%;            
+            form{
+                label{
+                    display: block;
+                    font-size: 14px;
+                    margin-bottom: 4px;
+                }
+                input{
+                    width: 100%;
+                    box-sizing :border-box;
+                    padding: 4px;
+                    margin-bottom: 8px;
+                }
+                button{
+                    /*/ทำปุ่ม/*/
+                    width: 100%;
+                    padding: 8px;
+                    background-color: rgb(0, 87, 39);
+                    border: none;
+                    color: aliceblue;
+                    font-size: 16px;
+                    cursor: pointer;
+                    margin-top: 8px;
+                }
+            }
+
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1>information technology</h1>
+            <p>ยินดีต้อนรับเข้าสู่เว็บไซว์การเรียนการสอน</p>
+        </div>
+        <div class="right-side">
+            <h2>Login</h2>
+            <form action="">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit" >Login</button>
+            </form>
+            <p>Forgot <a href="index.html">password?</a> </p>
+            <p>Don't have an accout?    <a href="#">Register</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
