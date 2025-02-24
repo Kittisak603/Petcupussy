@@ -28,7 +28,7 @@
             /*/แยกซ้ายขวา/*/
             display: flex;
             overflow: hidden;
-        }
+        }   
         .left-side{
             /*/คุมฝั่งซ้าย/*/
             background-image: url(https://i1.wp.com/ngthai.com/app/uploads/2021/10/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94-1.jpg?resize=640%2C398&ssl=1);
@@ -89,7 +89,7 @@
         </div>
         <div class="right-side">
             <h2>Login</h2>
-            <form action="">
+            <form action="" id="loginForm" method="post">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" required>
                 
@@ -101,6 +101,45 @@
             <p>Don't have an accout?    <a href="#">Register</a></p>
         </div>
     </div>
+      <script>
+        function openMenu() {
+            document.getElementById("fullScreenMenu").style.display = "block";
+        }
     
+        function closeMenu() {
+            document.getElementById("fullScreenMenu").style.display = "none";
+        }
+    
+    </script>
+    <a href="index.html" class="back-home">Back To Home</a>
+    ava Script สำหรับหน้า Login
+===========================
+    <script>
+        // เพิ่ม event listener ให้กับฟอร์มที่มี id เป็น "loginForm"
+        // เมื่อผู้ใช้กด submit จะเรียกใช้ฟังก์ชันที่กำหนด
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // ป้องกันการโหลดหน้าใหม่เมื่อกดปุ่ม submit
+   
+            // ดึงค่าที่ผู้ใช้ป้อนจาก input field (username และ password) และตัดช่องว่างด้านหน้า/หลังออก
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let errorMsg = document.getElementById("errorMsg"); // อ้างอิงถึง div ที่ใช้แสดงข้อความ error
+   
+            // ตรวจสอบว่าผู้ใช้กรอกข้อมูลครบหรือไม่
+            if (username === "" || password === "") {
+                errorMsg.textContent = "กรุณากรอก Username และ Password"; // แสดงข้อความแจ้งเตือน
+                return; // ออกจากฟังก์ชันทันที ไม่ดำเนินการตรวจสอบต่อ
+            }
+   
+            // ตรวจสอบว่าข้อมูลที่ป้อนตรงกับค่าที่กำหนดไว้หรือไม่ (username: "admin", password: "1234")
+            if (username === "admin" && password === "1111") {
+                //alert("เข้าสู่ระบบสำเร็จ!"); // แจ้งเตือนผู้ใช้ว่าล็อกอินสำเร็จ
+                window.location.href = "W13_webResponsive.html"; // เปลี่ยนหน้าไปยังเป้าหมาย"
+            } else {
+                errorMsg.textContent = "Username หรือ Password ไม่ถูกต้อง"; // แสดงข้อความ error เมื่อป้อนข้อมูลผิด
+            }
+        });
+    </script>
+
 </body>
 </html>
