@@ -79,6 +79,20 @@
         text-decoration: none;
         color: blue;
     }
+    .back-home{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.back-home:hover {
+  background-color: var(--ttt);
+}
     </style>
 </head>
 <body>
@@ -97,40 +111,30 @@
                 <input type="password" name="password" id="password" required>
                 <button type="submit" >Login</button>
             </form>
-            <p>Forgot <a href="index.html">password?</a> </p>
+            <p>Forgot <a href="">password?</a> </p>
             <p>Don't have an accout?    <a href="#">Register</a></p>
         </div>
     </div>
-      <script>
-        function openMenu() {
-            document.getElementById("fullScreenMenu").style.display = "block";
-        }
+      
     
-        function closeMenu() {
-            document.getElementById("fullScreenMenu").style.display = "none";
-        }
     
-    </script>
-    <a href="index.html" class="back-home">Back To Home</a>
-    ava Script สำหรับหน้า Login
-===========================
     <script>
         // เพิ่ม event listener ให้กับฟอร์มที่มี id เป็น "loginForm"
         // เมื่อผู้ใช้กด submit จะเรียกใช้ฟังก์ชันที่กำหนด
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault(); // ป้องกันการโหลดหน้าใหม่เมื่อกดปุ่ม submit
-   
+            
             // ดึงค่าที่ผู้ใช้ป้อนจาก input field (username และ password) และตัดช่องว่างด้านหน้า/หลังออก
             let username = document.getElementById("username").value.trim();
             let password = document.getElementById("password").value.trim();
             let errorMsg = document.getElementById("errorMsg"); // อ้างอิงถึง div ที่ใช้แสดงข้อความ error
-   
+            
             // ตรวจสอบว่าผู้ใช้กรอกข้อมูลครบหรือไม่
             if (username === "" || password === "") {
                 errorMsg.textContent = "กรุณากรอก Username และ Password"; // แสดงข้อความแจ้งเตือน
                 return; // ออกจากฟังก์ชันทันที ไม่ดำเนินการตรวจสอบต่อ
             }
-   
+            
             // ตรวจสอบว่าข้อมูลที่ป้อนตรงกับค่าที่กำหนดไว้หรือไม่ (username: "admin", password: "1234")
             if (username === "admin" && password === "1111") {
                 //alert("เข้าสู่ระบบสำเร็จ!"); // แจ้งเตือนผู้ใช้ว่าล็อกอินสำเร็จ
@@ -139,7 +143,8 @@
                 errorMsg.textContent = "Username หรือ Password ไม่ถูกต้อง"; // แสดงข้อความ error เมื่อป้อนข้อมูลผิด
             }
         });
-    </script>
+        </script>
 
+<a href="index.html" class="back-home">Back To Home</a>
 </body>
 </html>
