@@ -337,7 +337,6 @@ footer {
     flex-direction: column;
   }
   .full-screen-menu {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -376,4 +375,22 @@ footer {
     right: 30px;
     cursor: pointer;
   }
+}
+.full-screen-menu{
+  display: none;
+}
+.back-home{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color-normal);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.back-home:hover {
+  background-color: var(--ttt);
 }
