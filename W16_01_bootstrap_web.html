@@ -11,6 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        
+
+
+
+    <!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <style>
         body{
@@ -53,7 +60,7 @@
         .plan-features li .cross {
                     color: red;
         }
-         .back-home {
+            .back-home {
                     position: fixed;
                     bottom: 20px;
                     right: 20px;
@@ -67,6 +74,13 @@
     }
     .back-home:hover {
                     background-color: #0f006d;
+    }
+    .card{
+        width: 90%;
+    }
+    img-size{
+        width: auto;
+        height: 30px;
     }
     </style>
 </head>
@@ -159,7 +173,7 @@
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nam minima quo et, harum pariatur. Sit libero, rerum possimus quaerat quod nisi eveniet, eum porro repellat quibusdam sint cum assumenda.</p>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card card-body mb-4 pricing-card">
+                    <div class="card card-body mb-4 pricing-card m-auto">
                         <h3 class="plan-title text-primary">Free Plan</h3>
                         <p class="plan-price">$0</p>
                         <p class="text-muted">per month</p>
@@ -173,7 +187,7 @@
                     </div>
                 </div>
                     <div class="col-md-4">
-                        <div class="card card-body mb-4 pricing-card">
+                        <div class="card card-body mb-4 pricing-card m-auto">
                             <h3 class="plan-title text-primary">Pro Plan</h3>
                             <p class="plan-price">$29</p>
                             <p class="text-muted">per month</p>
@@ -202,16 +216,115 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-primary p-5 text-white-50 text-center ">
-         <h2>@Kittisak Kummunagsa</h2>
-         <p>information Technology Program.  Science and Technology Faculty.</p>
-         <p>Nakhon Pathom Rajabhat University</p>
+        <!--Table section-->
+        <div class="container-fluid bg-body-secondary mb-5">
+            <div class="container py-2">
+                <div class="card my-2 p-5 m-auto">
+                    <h1 class="text-uppercase text-center text-primary ">Menber</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Esse eos, voluptas, quisquam mollitia quaerat, ipsam sed 
+                        commodi velit corporis totam perferendis asperiores maiores 
+                        doloribus. Minus obcaecati temporibus incidunt a perferendis!</p>
+                        <!--create table-->
+                            <table class="table table-responsive0 table-hover ">
+                                <tbody class="table-group-divider table-danger">
+                                <thead >
+                                    <tr class="table-secondary">
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                    <th scope="col">Photo</th>
+                                    </tr>
+                                </thead>
+                                    <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td><img src="images/22.png" alt="gg" class="img-thumbnail img-size clickable-image"></td>
+                                    
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td><img src="images/33.png" alt="gg" class="img-thumbnail img-size clickable-image"></td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td><img src="images/rabbit3.jpg" alt="gg" class="img-thumbnail img-size clickable-image"></td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                </div>
+            </div>
+        </div>
+        <!--Contact section-->
+        <div class="container-fluid">
+            <div class="container bg-secondary">
+                <div class="row mb-5 p-5">
+                    <div class="col-md-6">
+                        <h1>contact us</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Address : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae mollitia similique repudiandae reiciendis dignissimos temporibus, cupiditate nostrum possimus quo voluptatem repellat blanditiis asperiores iste earum odit perferendis explicabo, quisquam magnam!</p>
+                        <p>Phon : + 66 089-586-4562</p>
+                    </div>
+                    <div class="col-md-6">
+                            <form>                      
+                                <div class="mb-3">
+                                    <label for="disabledTextInput" class="form-label">Name</label>
+                                    <input type="text" id="name" class="form-control" >
+                                </div>
 
-     </div> 
+                                <div class="mb-3">
+                                    <label for="email" class="text-capitalize">E-mail</label>
+                                    <input type="emailHelp" id="email" class="form-control" >
+                                </div>
+                                <div class="mb-3">
+                                    <label for="meses" class="form-label">messenger</label>
+                                    <textarea name="messenger" id="meses" rows="4" class="form-control" ></textarea>
+                                <div class="form-check"></div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>                  
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container-fluid bg-primary p-2 text-white-50 text-center ">
+            <h2 class="m-0">@Kittisak Kummunagsa</h2>
+            <p class="m-0">information Technology Program.  Science and Technology Faculty.</p>
+            <p class="m-0">Nakhon Pathom Rajabhat University</p>
+        </div> 
     
         <a href="index.html" class="back-home">Back To home</a>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    //โค้ดนี้ใช้ JavaScript เพื่อเลือกทุกองค์ประกอบ <img> ที่มี class="clickable-image" [จะเลือก ทั้ง 3 รูป] และเพิ่ม Event Listener ให้กับแต่ละรูปภาพ เพื่อให้สามารถคลิกแล้วเกิด popup (SweetAlert2) แสดงรูปขยายได้
+    document.querySelectorAll(".clickable-image").forEach(img => {   //img แทนแต่ละรูปที่ถูกเลือกในลูป
+        img.addEventListener("click", function() {    //เพิ่มฟังก์ชันให้ แต่ละรูป เมื่อถูกคลิก
+            Swal.fire({
+                //title: 'Image Preview',
+                imageUrl: img.src, // ใช้ src ของรูปที่คลิก
+                imageWidth: 500, // ขนาดรูปที่ขยาย
+                imageHeight: 'auto',
+                imageAlt: img.alt, // ใช้ alt ของรูป
+                showCloseButton: true,
+                confirmButtonText: 'Close'
+                
+            });
+        });
+    });
+</script>
 </body>
 </html>
