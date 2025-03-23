@@ -29,10 +29,10 @@
             color: rgb(0, 0, 0);
         }
         .section {
-            
+            padding: 50px;
             display: flex;
             justify-content: center;
-           
+            align-items: center;
             gap: 25px;
             height: 100vh;
             flex-wrap: wrap; /* ให้การ์ดสามารถตัดบรรทัดใหม่ได้ */
@@ -48,7 +48,7 @@
             transition: 0.5 ease;
             cursor: pointer;
             width: 250px; /* ความกว้างเริ่มต้นของการ์ด */
-            height: 250px;
+            height: 200px;
         }
         .card img {
             width: 100%;
@@ -107,18 +107,19 @@
     <header class="hero" id="hd">
         <div>
            
-            <marquee  direction="right">
+            <marquee  direction="right"><hr>
             <h1>Welcome to My Portfolio</h1>
-            <p class="text-center">Web Developer | Designer | Innovator 💻</p>
+            <p class="text-center">Web Developer | Designer | Innovator 💻</p><hr>
         </marquee>
         </div>
     </header>   
         
             <div class="about-section shadow-lg  " id="Abou">
                 <div>
-                    <marquee  direction="down" class="m-3">
+                    <marquee  direction="down" class="m-4 p-5">
                         <h1>About Me</h1>
                     </marquee>
+                    <hr>
                 </div>
                 <div class="card mb-3"><img src="11/309425311_1095477024688681_7168699045198157632_n.jpg" alt=""  class="card-img-top"></div>
             <h2>Hi my name Kittisak</h2>
@@ -130,15 +131,15 @@
     
     
     <div class="section vh-100 h-100 " id="ca">
-        <div class="text-center"><marquee  direction="down" >
+        <marquee  direction="down" class=" text-center">
             <h1>Performance</h1>
-        </marquee></div>
+        </marquee>
         
           
            <div class="card "><img src="images/121.png" alt=""></div>
            <div class="card"><img src="images/131.png" alt=""></div>
            <div class="card"><img src="images/121.png" alt=""></div>
-           <div class="card"><img src="images/131.png" alt=""></div>
+           <div class="card"><img src="images/131.png" alt=""></div><br>
     </div>
 
     <div class="about-section shadow-lg text-start " id="Abou">
